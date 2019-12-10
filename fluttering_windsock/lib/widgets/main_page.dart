@@ -40,7 +40,7 @@ class _MainPageState extends State<MainPage> {
         title: Text(widget.title),
       ),
       body: Container(
-        child: RefreshIndicator(
+        child: RefreshIndicator( // TODO: Add proper state handling.
           onRefresh: () {
             BlocProvider.of<WeatherBloc>(context).add(RefreshEvent.refresh);
             return Future.delayed(const Duration(seconds: 2));

@@ -23,7 +23,7 @@ class LocationWidget extends StatelessWidget {
             ),
             Text(
               (weather.areaName.isNotEmpty) ? weather.areaName : "Unknown",
-                style: Theme.of(context).textTheme.title,
+              style: Theme.of(context).textTheme.title,
             ),
           ],
         ),

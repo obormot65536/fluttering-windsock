@@ -1,4 +1,3 @@
-
 import 'package:weather/weather.dart';
 
 class WeatherInfo {
@@ -7,5 +6,6 @@ class WeatherInfo {
   final String location;
   final int timestamp;
 
-  WeatherInfo(this.currentWeather, this.fiveDaysForecast, this.location, this.timestamp);
+  WeatherInfo(this.currentWeather, this.fiveDaysForecast, this.location,
+      this.timestamp);
 }

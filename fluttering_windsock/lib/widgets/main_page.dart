@@ -59,9 +59,7 @@ class _MainPageState extends State<MainPage> {
                   Container(
                     margin: EdgeInsets.all(8),
                     child: Divider(
-                      color: Theme
-                          .of(context)
-                          .backgroundColor,
+                      color: Theme.of(context).backgroundColor,
                       height: 2,
                     ),
                   ),

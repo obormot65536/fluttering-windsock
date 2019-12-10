@@ -43,10 +43,13 @@ class WeatherBloc extends Bloc<RefreshEvent, WeatherState> {
     List<Weather> next;
     yield await weatherStation
         .currentWeather()
-        .then((val) => current = val) //WeatherInfo(val, null, val.areaName, DateTime.now().millisecondsSinceEpoch))
+        .then((val) => current = val)
         .then((info) => weatherStation.fiveDayForecast())
         .then((val) => next = val)
-        .then((_) => WeatherState(DataState.loaded,
-            WeatherInfo(current, next, current.areaName, DateTime.now().millisecondsSinceEpoch), null));
+        .then((_) => WeatherState(
+            DataState.loaded,
+            WeatherInfo(current, next, current.areaName,
+                DateTime.now().millisecondsSinceEpoch),
+            null));
   }
 }

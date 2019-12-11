@@ -2,3 +2,5 @@
 This is a demo weather app written using Flutter.
 
 https://openweathermap.org/ is used as a source of weather data.
+
+<img src=app.png width='320'>
